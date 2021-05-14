@@ -1,0 +1,819 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CourseProject</name>
+    </assembly>
+    <members>
+        <member name="T:CourseProject.Credit">
+            <summary>
+            Класс для представления сущности зачета
+            </summary>
+        </member>
+        <member name="T:CourseProject.DataBase">
+            <summary>
+            Класс хранит список со студентам и работает с ним
+            </summary>
+        </member>
+        <member name="T:CourseProject.Discipline">
+            <summary>
+            Базовый абстрактный класс дисциплина, является родителем для класса Credit и Exam
+            </summary>
+        </member>
+        <member name="T:CourseProject.Exam">
+            <summary>
+            Класс представляет собой сущноность экзамена
+            </summary>
+        </member>
+        <member name="T:CourseProject.FormMain">
+             <summary>
+            Основная форма для работы с базой данных
+            <item>_myDataBase<description>Класс содержит базу данных</description></item>
+             </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.FillInSpecialities">
+            <summary>
+            Метод заполняет списки названиями специальностей дла каждого факультета и факультетами
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.MainPanel_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Перерисовывает форму при её изменениях размера
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelMenu_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает панель с меню
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.TittleMenu_Click(System.Object,System.EventArgs)">
+            <summary>
+            Закрывает панель с меню
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonMenu_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает панель с меню
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.DataGrid_CellValueChanged(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Изменяет значения в выпадающем списке дисцпилин в соответствии с выбранным семестром в другом выпадающем списке
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.DataGrid_CurrentCellDirtyStateChanged(System.Object,System.EventArgs)">
+            <summary>
+            Запоминает значения, которое было в ячейки до изменения
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.HideMainWidget">
+            <summary>
+            Скрывает виджеты для работы с базой данных
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает виджеты для добавление нового объекта
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает виджеты для добавление нового объекта
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.TrackBarAssessmentAdd_Scroll(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет текст на TrackBar при его изменения значения
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonBackAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            Возвращает виджеты для работы с базой данных и скрывает виджеты для добавления студента
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonAddCredit_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает или скрывает виджеты для добавления зачета
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonAddSemester_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает виджеты для создания семестра
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonBackAddSemester_Click(System.Object,System.EventArgs)">
+            <summary>
+            Скрывает виджеты для добавления семестра
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonAddExam_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает или скрывает виджеты для добавления экзамена
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonBackAddDiscipline_Click(System.Object,System.EventArgs)">
+            <summary>
+            Скрывает виджеты для добавления дисциплины
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelBackAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            Возвращает виджеты для работы с базой данных и скрывает виджеты для добавления студента
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelAddExam_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает или скрывает виджеты для добавления экзамена
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelAddCredit_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает или скрывает виджеты для добавления зачета
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.CheckTextBoxMistake(System.Windows.Forms.TextBox,System.String)">
+            <summary>
+            Изменяет в textbox текст на поступающую строку и цвет текста на красный
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.CheckTextBoxStringEmpty(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверяет textbox на пустоту и возвращает состояние этого
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonAddSaveDiscipline_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сохраняет дисциплину в список
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelAddSaveDiscipline_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сохраняет дисциплину в список
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonAddDeleteDiscipline_Click(System.Object,System.EventArgs)">
+            <summary>
+            Удаляет дисциплину из списка
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.TextBoxDoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет в textbox цвет текста на черный и текст внутри на пустую строку при двойном нажатии
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.TextBoxChanged(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет в textbox цвет текста на черный, если текущей цвет красный или зеленый при изменении текста
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonAddSaveSemester_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сохраняет семестр в список
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonDeleteSemester_Click(System.Object,System.EventArgs)">
+            <summary>
+            Удаляет семестр из списка
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelAddSaveSemester_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сохраняет семестр в список
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ComboBoxAddFaculty_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет специальности в combobox при изменение факультета
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonAddSaveStudent_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сохраняет студента в базу данных
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonFindStudent_Click(System.Object,System.EventArgs)">
+            <summary>
+            Находит студента в базе данных по Id или по фамилии
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonDeleteObject_Click(System.Object,System.EventArgs)">
+            <summary>
+            Удаляет студента из базы данных
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonChangeStudent_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает панель для изменения атрибутов студента
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.PanelForChnageStudent_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Перерисовывает панель изменения при изменении её размера
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal7_Click(System.Object,System.EventArgs)">
+            <summary>
+            Возвращет основную панель, скрывая панель для изменения
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.pictureBox1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Находит студента в базе данных и возвращает его атрибуты для изменения
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.comboBox4_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет специальности при изменения факультета
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.comboBox2_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Открывает семестр при его выборе в выпадающем списке для изменения
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.comboBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+             Открывает дисциплину при её выборе в выпадающем списке для изменения
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal4_Click(System.Object,System.EventArgs)">
+            <summary>
+             Открывает дисциплину при её выборе в выпадающем списке для изменения
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.trackBar1_Scroll(System.Object,System.EventArgs)">
+            <summary>
+             Изменяет тескт в соответствии с измненеием Trackbar
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.Control_Changed(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет значение для дисцпилины соответствии с выбранной из списка
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Скрывает виджеты для изменения или создание дисциплины
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal10_Click(System.Object,System.EventArgs)">
+            <summary>
+            Скрывает или отображает виджеты для создания семестра
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal9_Click(System.Object,System.EventArgs)">
+            <summary>
+             Удаляет семестр из списка
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.labelMy5_Click(System.Object,System.EventArgs)">
+            <summary>
+            Возвращет основную панель, скрывая панель для изменения
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelChange_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает панель для изменения атрибутов студента
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.TextBoxFindStudent_Enter(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет строку в textbox на пустую
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.TextBoxFindStudent_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет строку в textbox на id/Фамилия
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.TextBoxEmpty">
+            <summary>
+            Создаёт пустые строку в textbox 
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal6_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает виджеты для добавления дисциплин в существующий семестр
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal3_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сохраняет созданную или измененную дисциплину
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal5_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает виджеты для добавления дисцпилины в новый семестр
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal11_Click(System.Object,System.EventArgs)">
+            <summary>
+            Добавляет или изменяет семестр у студента
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal8_Click(System.Object,System.EventArgs)">
+            <summary>
+            Удаяляет дисциплину
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.imagePersonal1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изменяет атрибуты студента
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonForSort_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает подменю для фильтрации базы данных
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonSortFaculties_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает виджеты для фильтрации по факультетам
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ComboBoxSortFaculties_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Фильтрует данные базы данных по выбранному факультету
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonForSortSpeciality_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает виджеты для фильтрации по  специальностям
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ComboBoxSpecialitySort_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Фильтрует данные базы данных по выбранной спецаильности
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonSuccessLearning_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает виджеты для фильтрации по успеваемости
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.CheckBoxPassedForTwo_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            устанавливает выбор флажков на выкл. у всех, кроме варианта "не сдавшие"
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.CheckBoxPassedForThree_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+             Устанавливает флажок на выкл. у варианта "не сдавшие"
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.CheckBoxPassedForFive_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+             Устанавливает флажок на выкл. у варианта "не сдавшие"
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.CheckBoxPassedForFour_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+             Устанавливает флажок на выкл. у варианта "не сдавшие"
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonGenerateReports_Click(System.Object,System.EventArgs)">
+            <summary>
+             Фильтрует студентов по успеваемости с выбор факультета и специальности включительно
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonSaveBaseData_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сохраняет базу данных в файл
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelForSort_Click(System.Object,System.EventArgs)">
+            <summary>
+            Открывает подменю для фильтрации базы данных
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.LabelSaveBaseData_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сохраняет базу данных в файл
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.HideControlsForSurnames">
+            <summary>
+            Скрывает виджеты для фильтрации по фамилиям
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonForSortSameSurname_Click(System.Object,System.EventArgs)">
+            <summary>
+            Скрывает или открывает виджеты для фильтрации по фамилиям
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.ButtonStartSortSurnames_Click(System.Object,System.EventArgs)">
+            <summary>
+            Фильтрует студентов по фамилии
+            </summary>
+        </member>
+        <member name="F:CourseProject.FormMain.components">
+            <summary>
+            Обязательная переменная конструктора.
+            </summary>
+        </member>
+        <member name="M:CourseProject.FormMain.AddControlsForAdd">
+            <summary>
+            Освободить все используемые ресурсы.
+            </summary>
+            <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        </member>
+        <member name="M:CourseProject.FormMain.InitializeComponent">
+            <summary>
+            Требуемый метод для поддержки конструктора — не изменяйте 
+            содержимое этого метода с помощью редактора кода.
+            </summary>
+        </member>
+        <member name="T:CourseProject.Form2">
+            <summary>
+            Форма с приветствием 
+            </summary>
+        </member>
+        <member name="M:CourseProject.Form2.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Счетчик отсчитывает до нуля и закрывает форму
+            </summary>
+        </member>
+        <member name="M:CourseProject.Form2.ButtonFinish_Click(System.Object,System.EventArgs)">
+            <summary>
+            Закрывает форму
+            </summary>
+        </member>
+        <member name="M:CourseProject.Form2.LabelFinish_Click(System.Object,System.EventArgs)">
+            <summary>
+            Закрывает форму
+            </summary>
+        </member>
+        <member name="F:CourseProject.Form2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CourseProject.Form2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CourseProject.Form2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:CourseProject.MainGUI.Main">
+            <summary>
+            Главная точка входа для приложения.
+            </summary>
+        </member>
+        <member name="T:CourseProject.Properties.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.OnOffCredit">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.OnOffExam">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ДобавитьБезфона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ДобавитьСеместрБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ДобавитьСеместрБезФонаКрашенныелисты">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ДобавитьСеместрСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ДобавитьСеместрСФономКрашенныелисты">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЗавершитьСчетБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЗавершитьСчетСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЗавершитьСчетСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЗачетБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЗачетСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЗачетСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ИзменитьБезФон">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ИзменитьБезФон1">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ИзменитьСФон">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ИзменитьСФонПонажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.Лупа">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.МенюСерое">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.МенюСортировокБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.МенюСортировокСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.МенюСортировокСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.МенюСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.МенюСФономНажатое">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.МенюСФономНажатое2">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.НазадБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.НазадБезФона1">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.НазадСФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.НазадСФонаПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.НоваяСоздатьБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.НоваяСоздатьСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.НоваяСоздатьСФономПонажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ОднофамильцыБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ОднофамильцыСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ОднофамильцыСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ОтчетУспеваемостиБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ОтчетУспеваемостиСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ОтчетУспеваемостиСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ПускБезФона1">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ПускПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ПускСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СохранитьБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СохранитьБезФонаБазу">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СохранитьСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СохранитьСфономБазу">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СохранитьСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СохранитьСфономПоНажатиюБазу">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СпециальностьБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СпециальностьСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.СпециальностьСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.УдалитьCФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.УдалитьБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.УдалитьБезФонаВырезанная">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.УдалитьСФономВырезанная">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.УспеваемостьБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.УспеваемостьСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.УспеваемостьСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ФакультетыБезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ФакультетыСФоном">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ФакультетыСФономПоНажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.Фон">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЭкзаменбезФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЭкзаменСФона">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CourseProject.Properties.Resources.ЭкзаменСФонаПонажатию">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:CourseProject.RecordBook">
+            <summary>
+            Класс является зачетной книжной, который хранит семестры студента
+            </summary>
+        </member>
+        <member name="T:CourseProject.Semester">
+            <summary>
+            Класс явялется семестром, который хранит список дисциплин студента
+            </summary>
+        </member>
+        <member name="T:CourseProject.Student">
+            <summary>
+            Основной класс сущности студент, который хранится в базе данных
+            </summary>
+        </member>
+    </members>
+</doc>

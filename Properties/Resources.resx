@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="УдалитьСФономВырезанная" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\УдалитьСФономВырезанная.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СпециальностьСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СпециальностьСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="НазадБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\НазадБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЗавершитьСчетСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЗавершитьСчетСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ФакультетыБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ФакультетыБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЗавершитьСчетБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЗавершитьСчетБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="МенюСФономНажатое" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\МенюСФономНажатое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="МенюСортировокСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\МенюСортировокСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="МенюСортировокСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\МенюСортировокСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="МенюСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\МенюСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЗавершитьСчетСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЗавершитьСчетСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="НоваяСоздатьСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\НоваяСоздатьСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЗачетБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЗачетБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ДобавитьСеместрСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ДобавитьСеместрСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="УспеваемостьБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\УспеваемостьБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ОтчетУспеваемостиСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ОтчетУспеваемостиСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="УспеваемостьСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\УспеваемостьСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЗачетСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЗачетСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЗачетСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЗачетСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СохранитьСфономПоНажатиюБазу" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СохранитьСфономПоНажатиюБазу.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЭкзаменбезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЭкзаменбезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СохранитьСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СохранитьСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ИзменитьСФон" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ИзменитьСФон.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ИзменитьСФонПонажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ИзменитьСФонПонажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="НазадБезФона1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\НазадБезФона1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ФакультетыСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ФакультетыСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="МенюСФономНажатое2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\МенюСФономНажатое2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="НоваяСоздатьСФономПонажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\НоваяСоздатьСФономПонажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ДобавитьСеместрБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ДобавитьСеместрБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ПускСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ПускСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЭкзаменСФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЭкзаменСФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="НазадСФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\НазадСФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="УдалитьБезФонаВырезанная" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\УдалитьБезФонаВырезанная.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OnOffCredit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OnOffCredit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ЭкзаменСФонаПонажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ЭкзаменСФонаПонажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ПускБезФона1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ПускБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OnOffExam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OnOffExam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СохранитьБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СохранитьБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="УдалитьБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\УдалитьБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="МенюСерое" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\МенюСерое.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СпециальностьСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СпециальностьСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СохранитьСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СохранитьСФоном1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СохранитьБезФонаБазу" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СохранитьБезФонаБазу.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="НоваяСоздатьБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\НоваяСоздатьБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ДобавитьБезфона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ДобавитьБезфона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СохранитьСфономБазу" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СохранитьСфономБазу.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="УспеваемостьСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\УспеваемостьСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ОднофамильцыСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ОднофамильцыСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="НазадСФонаПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\НазадСФонаПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ОднофамильцыСФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ОднофамильцыСФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="УдалитьCФоном" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\УдалитьCФоном.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="СпециальностьБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\СпециальностьБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Фон" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Фон.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Лупа" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Лупа.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ОтчетУспеваемостиБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ОтчетУспеваемостиБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ФакультетыСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ФакультетыСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ИзменитьБезФон" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ИзменитьБезФон.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ДобавитьСеместрБезФонаКрашенныелисты" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ДобавитьСеместрБезФонаКрашенныелисты.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ИзменитьБезФон1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ИзменитьБезФон1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ОднофамильцыБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ОднофамильцыБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ДобавитьСеместрСФономКрашенныелисты" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ДобавитьСеместрСФономКрашенныелисты.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="МенюСортировокБезФона" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\МенюСортировокБезФона.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ОтчетУспеваемостиСФономПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ОтчетУспеваемостиСФономПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ПускПоНажатию" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ПускПоНажатию.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
